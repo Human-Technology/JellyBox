@@ -240,8 +240,8 @@ Feel free to open issues or pull requests! Give the project a star if you liked 
 
 ## Contact
 
-- Blog: [link to your blog]
-- YouTube: [link to your video]
-- X/Twitter: [link to your profile]
+- Blog: [AlgoritmoX86](http://algoritmox86.com/).
+- YouTube: [@HumanTechnologyDev](https://www.youtube.com/@HumanTechnologyDev)
+- X/Twitter: [js_human](https://x.com/js_human)
 
 Enjoy your JellyBox and bring your entertainment anywhere!
