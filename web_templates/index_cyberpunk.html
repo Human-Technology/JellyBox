@@ -1,0 +1,99 @@
+<!-- index_cyberpunk.html (Responsive + Animations + IP info) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cyberpunk Jellyfin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #00fff7;
+      font-family: 'Orbitron', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      min-height: 100vh;
+    }
+
+    .logo {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #00fff7;
+      text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+      animation: glitch 1s infinite;
+    }
+
+    @keyframes glitch {
+      0% { text-shadow: 2px 2px #ff00c1; }
+      25% { text-shadow: -2px -1px #00fff7; }
+      50% { text-shadow: 2px -2px #ff00c1; }
+      75% { text-shadow: -1px 2px #00fff7; }
+      100% { text-shadow: 2px 2px #ff00c1; }
+    }
+
+    .button {
+      margin: 1rem;
+      background: none;
+      border: 2px solid #00fff7;
+      padding: 1rem 2rem;
+      color: #00fff7;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background-color: #00fff720;
+      box-shadow: 0 0 15px #00fff7;
+    }
+
+    .ascii-logo {
+      font-family: monospace;
+      white-space: pre;
+      color: #00fff7;
+      font-size: 0.8rem;
+      margin-top: 2rem;
+    }
+
+    .ip-info {
+      margin-top: 1rem;
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    @media screen and (max-width: 600px) {
+      .logo { font-size: 1.8rem; }
+      .button { padding: 0.8rem 1.5rem; font-size: 1rem; }
+      .ascii-logo { font-size: 0.6rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">💾 Jellyfin CyberServer</div>
+  <p>Streaming offline como un hacker del 2099</p>
+  <a class="button" href="http://{{IP_LOCAL}}:8096">Go to Jellyfin</a>
+
+  <div class="ip-info" id="ip-info">Your local IP: {{IP_LOCAL}}</div>
+
+  <div class="ascii-logo">
+<pre>
+██╗  ██╗██╗   ██╗███╗   ███╗ █████╗ ███╗   ██╗
+██║  ██║██║   ██║████╗ ████║██╔══██╗████╗  ██║
+███████║██║   ██║██╔████╔██║███████║██╔██╗ ██║
+██╔══██║██║   ██║██║╚██╔╝██║██╔══██║██║╚██╗██║
+██║  ██║╚██████╔╝██║ ╚═╝ ██║██║  ██║██║ ╚████║
+╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
+</pre>
+
+  </div>
+
+</body>
+</html>
