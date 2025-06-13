@@ -168,6 +168,7 @@ sudo apt install python3-dev python3-pip python3-setuptools
 2. Clone the repository:
 
 ```sh
+sudo apt update && sudo apt install git -y
 git clone https://github.com/Human-Technology/JellyBox.git
 cd JellyBox
 ```
