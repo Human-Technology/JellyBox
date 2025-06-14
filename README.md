@@ -1,5 +1,7 @@
 # JellyBox
 
+![Jellybox - Logo](https://github.com/user-attachments/assets/09dd9949-c54b-4696-b935-d50fff4a8ce0)
+
 **JellyBox** is a portable media server based on a Raspberry Pi that allows you to carry your movies, shows, and music anywhere, without the need for an internet connection. It creates its own Wi-Fi hotspot, plays content from a USB drive or external disk, and optionally includes a TFT-ST7789 display for a local interface.
 
 ## Project Structure
